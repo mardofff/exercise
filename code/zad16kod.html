@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="50" rows="50">
+
+
+    <html lang="pl">
+        <head>
+        <meta charset="utf-8">
+        <title>Canvas</title>
+        <script type="text/javascript">
+        function rysuj() {
+        var rysowanie = document.getElementById('obrazek');
+        var rodzaj = rysowanie.getContext('2d');
+        rodzaj.beginPath();
+        rodzaj.arc(200,50,30,360,0,true);
+        rodzaj.closePath();
+        rodzaj.lineWidth = 3;
+        rodzaj.strokeStyle = "black";
+        rodzaj.stroke();
+        rodzaj.beginPath();
+        rodzaj.arc(130,50,30,360,0,true);
+        rodzaj.closePath();
+        rodzaj.lineWidth = 3;
+        rodzaj.strokeStyle = "blue";
+        rodzaj.stroke();
+        rodzaj.beginPath();
+        rodzaj.arc(270,50,30,360,0,true);
+        rodzaj.closePath();
+        rodzaj.lineWidth = 3;
+        rodzaj.strokeStyle = "red";
+        rodzaj.stroke();
+        rodzaj.beginPath();
+        rodzaj.arc(165,80,30,360,0,true);
+        rodzaj.closePath();
+        rodzaj.lineWidth = 3;
+        rodzaj.strokeStyle = "yellow";
+        rodzaj.stroke();
+        rodzaj.beginPath();
+        rodzaj.arc(235,80,30,360,0,true);
+        rodzaj.closePath();
+        rodzaj.lineWidth = 3;
+        rodzaj.strokeStyle = "green";
+        rodzaj.stroke();
+        }
+        </script>
+        </head>
+        <body onload="rysuj();">
+        <canvas id="obrazek" width="1000" height="1000">
+        Twoja przeglądarka nie wspiera Canvas!
+        Musisz mieć Internet Explorer 9.x
+        </canvas>
+        </body>
+        </html>
+</textarea>
+</body>
+</html>
